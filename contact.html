@@ -13,7 +13,7 @@
 
 <body>
     <!-- Navigation -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <!-- Wrapped to align with content area -->
         <div class="container">
             <h1 class="navbar-brand m-0 p-3 text-white bg-info">Your Name</h1>
@@ -32,8 +32,23 @@
         </div>
     </header>
     <!-- Main content area  -->
-    <main class="container border my-5 p-4">
-        ...
+    <main class="container border my-4 p-4">
+        <h2 class="text-info border-bottom">Contact</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="8"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
     </main>
     <!-- Footer -->
     <footer class="navbar navbar-dark bg-dark border-top border-info fixed-bottom justify-content-center">
