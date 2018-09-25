@@ -11,72 +11,81 @@
     <title>Bootstrap Portfolio</title>
 </head>
 
-<body>
+<!-- Allows for sticky footer and background image -->
+<body class="d-flex flex-column" style="min-height: 100vh; background: url('https://nehasahay.github.io/Basic-Portfolio/assets/images/concrete_seamless.png') repeat;">
     <!-- Navigation -->
-    <header class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <!-- Wrapped to align with content area -->
         <div class="container">
-            <h1 class="navbar-brand m-0 p-3 text-white bg-info">Your Name</h1>
-            <!-- Sandwich button  -->
+            <h1 class="navbar-brand m-0 p-4 text-white bg-info">Your Name</h1>
+            <!-- Sandwich button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi" aria-controls="navi"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navi">
                 <nav class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link border-right" href="index.html">About</a>
-                    <a class="nav-item nav-link border-right active" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link pr-3 border-right" href="index.html">About</a>
+                    <a class="nav-item nav-link px-3 border-right active" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link pl-3" href="contact.html">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- Main content area  -->
-    <main class="container border my-4 p-4">
-        <h2 class="text-info border-bottom">Portfolio</h2>
-        <div class="row">
-            <div class="col-6 col-md-4">
-                <figure class="figure position-relative">
-                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=1" alt="Hangman">
-                    <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100" style="bottom: 1rem;">Hangman</figcaption>
-                </figure>
+    <!-- Sticky footer -->
+    <div class="flex-grow-1">
+        <!-- Main content area  -->
+        <main class="container border my-5 p-4 bg-white">
+            <h2 class="text-info border-bottom pb-4 mb-4" style="border-bottom-width: 0.2rem !important;">Portfolio</h2>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <figure class="figure position-relative">
+                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=1" alt="Hangman">
+                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
+                            style="bottom: 1rem;">Hangman</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4">
+                    <figure class="figure position-relative">
+                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=2" alt="RPG Game">
+                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
+                            style="bottom: 1rem;">RPG
+                            Game</figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="col-6 col-md-4">
-                <figure class="figure position-relative">
-                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=2" alt="RPG Game">
-                    <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100" style="bottom: 1rem;">RPG
-                        Game</figcaption>
-                </figure>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <figure class="figure position-relative">
+                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=3" alt="Trivia Game">
+                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
+                            style="bottom: 1rem;">Trivia
+                            Game</figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-md-4">
+                    <figure class="figure position-relative">
+                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=4" alt="Rutgers Info Widget">
+                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
+                            style="bottom: 1rem;">Rutgers
+                            Info Widget</figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-md-4">
-                <figure class="figure position-relative">
-                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=3" alt="Trivia Game">
-                    <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100" style="bottom: 1rem;">Trivia
-                        Game</figcaption>
-                </figure>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <figure class="figure position-relative">
+                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=5" alt="Rock Paper Scissors">
+                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
+                            style="bottom: 1rem;">Rock
+                            Paper Scissors</figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="col-6 col-md-4">
-                <figure class="figure position-relative">
-                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=4" alt="Rutgers Info Widget">
-                    <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100" style="bottom: 1rem;">Rutgers
-                        Info Widget</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-md-4">
-                <figure class="figure position-relative">
-                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=5" alt="Rock Paper Scissors">
-                    <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100" style="bottom: 1rem;">Rock
-                        Paper Scissors</figcaption>
-                </figure>
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <!-- Footer -->
-    <footer class="navbar navbar-dark bg-dark border-top border-info fixed-bottom justify-content-center">
+    <footer class="navbar navbar-dark bg-dark border-top border-info justify-content-center" style="border-top-width: 0.5rem !important;">
         <!-- Centers vertically  -->
         <span class="navbar-text">Copyright ©</span>
     </footer>
