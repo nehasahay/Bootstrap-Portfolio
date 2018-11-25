@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <title>Bootstrap Portfolio</title>
+    <style>
+        figcaption {
+            bottom: 1rem;
+        }
+    </style>
 </head>
 
 <!-- Allows for sticky footer and background image -->
+
 <body class="d-flex flex-column" style="min-height: 100vh; background: url('https://nehasahay.github.io/Basic-Portfolio/assets/images/concrete_seamless.png') repeat;">
     <!-- Navigation -->
     <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <!-- Wrapped to align with content area -->
         <div class="container">
-            <h1 class="navbar-brand m-0 p-4 text-white bg-info">Your Name</h1>
+            <h1 class="navbar-brand m-0 p-4 text-white bg-info">Neha</h1>
             <!-- Sandwich button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi" aria-controls="navi"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -37,49 +43,55 @@
         <!-- Main content area  -->
         <main class="container border my-5 p-4 bg-white">
             <h2 class="text-info border-bottom pb-4 mb-4" style="border-bottom-width: 0.2rem !important;">Portfolio</h2>
-            <div class="row mb-3">
-                <div class="col-6 col-lg-4">
-                    <figure class="figure position-relative">
-                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=1" alt="Hangman">
-                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
-                            style="bottom: 1rem;">Hangman</figcaption>
-                    </figure>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <figure class="figure position-relative">
-                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=2" alt="RPG Game">
-                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
-                            style="bottom: 1rem;">RPG
-                            Game</figcaption>
-                    </figure>
-                </div>
+            <div class="d-flex flex-wrap justify-content-between m-3">
+                <figure class="figure position-relative">
+                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=1" alt="LIRI Bot">
+                    <figcaption class="figure-caption btn btn-info p-3 position-absolute w-100" data-toggle="modal"
+                        data-target="#exampleModal">LIRI Bot</figcaption>
+                </figure>
+                <figure class="figure position-relative">
+                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=2" alt="A Day in History">
+                    <figcaption class="figure-caption btn btn-info p-3 position-absolute w-100" data-toggle="modal"
+                        data-target="#exampleModal">A Day in History</figcaption>
+                </figure>
+                <figure class="figure position-relative">
+                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=3" alt="Rock, Paper, Scissors">
+                    <figcaption class="figure-caption btn btn-info p-3 position-absolute w-100" data-toggle="modal"
+                        data-target="#exampleModal">Rock, Paper, Scissors</figcaption>
+                </figure>
+                <figure class="figure position-relative">
+                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=4" alt="GifTastic">
+                    <figcaption class="figure-caption btn btn-info p-3 position-absolute w-100" data-toggle="modal"
+                        data-target="#exampleModal">GifTastic</figcaption>
+                </figure>
+                <figure class="figure position-relative">
+                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=5" alt="Trivia Game">
+                    <figcaption class="figure-caption btn btn-info p-3 position-absolute w-100" data-toggle="modal"
+                        data-target="#exampleModal">Trivia Game</figcaption>
+                </figure>
+                <figure class="figure position-relative">
+                    <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=6" alt="Responsive Portfolio">
+                    <figcaption class="figure-caption btn btn-info p-3 position-absolute w-100" data-toggle="modal"
+                        data-target="#exampleModal">Responsive Portfolio</figcaption>
+                </figure>
             </div>
-            <div class="row mb-3">
-                <div class="col-6 col-lg-4">
-                    <figure class="figure position-relative">
-                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=3" alt="Trivia Game">
-                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
-                            style="bottom: 1rem;">Trivia
-                            Game</figcaption>
-                    </figure>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <figure class="figure position-relative">
-                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=4" alt="Rutgers Info Widget">
-                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
-                            style="bottom: 1rem;">Rutgers
-                            Info Widget</figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-6 col-lg-4">
-                    <figure class="figure position-relative">
-                        <img class="figure-img img-fluid" src="https://picsum.photos/275/200?random=5" alt="Rock Paper Scissors">
-                        <figcaption class="figure-caption text-center text-white bg-info p-3 position-absolute w-100"
-                            style="bottom: 1rem;">Rock
-                            Paper Scissors</figcaption>
-                    </figure>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                            <a href="" target="_blank" class="btn btn-secondary">GitHub</a>
+                            <a href="" target="_blank" class="btn btn-info">Demo</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -97,6 +109,64 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script class="figure-img img-fluid" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        function textOf(portfolioItem) {
+            var portfolioObject = {
+                description: "",
+                github: "",
+                deployed: ""
+            };
+            switch (portfolioItem) {
+                case "LIRI Bot":
+                    portfolioObject.description = "A command line interface created in Node.js that searches Spotify for songs, BandsInTown for concerts, and OMDB for movies through their respective API.";
+                    portfolioObject.github = "https://github.com/nehasahay/liri-node-app";
+                        portfolioObject.deployed = "";
+                    break;
+                case "A Day in History":
+                    portfolioObject.description = "A group project that queries Wikipedia and the New York Times to see what happened on a given date. Wikipedia returns selected historical events, whereas New York Times returns its most popular article that day.";
+                    portfolioObject.github = "https://github.com/nehasahay/Project1";
+                        portfolioObject.deployed = "https://nehasahay.github.io/Project1";
+                    break;
+                case "Rock, Paper, Scissors":
+                    portfolioObject.description = "A multiplayer Rock, Paper, Scissors game using Firebase. Only two users can play at a time, but any amount of users can chat during the game.";
+                    portfolioObject.github = "https://github.com/nehasahay/Firebase";
+                        portfolioObject.deployed = "https://nehasahay.github.io/Firebase";
+                    break;
+                case "GifTastic":
+                    portfolioObject.description = "Displays relevant gifs and tour information for a queried musical artist via the Giphy and BandsInTown APIs. Uses cookies to store the user's favorite gifs, and download.js to let them download them.";
+                    portfolioObject.github = "https://github.com/nehasahay/GifTastic";
+                        portfolioObject.deployed = "https://nehasahay.github.io/GifTastic";
+                    break;
+                case "Trivia Game":
+                    portfolioObject.description = "A math quiz using simple JQuery. The quiz only shows one question until the player answers or runs out of time. An appropriate response is then displayed, and the next question is loaded.";
+                    portfolioObject.github = "https://github.com/nehasahay/TriviaGame";
+                        portfolioObject.deployed = "https://nehasahay.github.io/TriviaGame";
+                    break;
+                case "Responsive Portfolio":
+                    portfolioObject.description =
+                        "A static portfolio created from scratch based on sample images. It is mobile responsive with three breakpoints: 980px, 768px and 640px. This portfolio is a reimagining of it using Bootstrap (for now!)";
+                        portfolioObject.github = "https://github.com/nehasahay/Responsive-Portfolio";
+                        portfolioObject.deployed = "https://nehasahay.github.io/Responsive-Portfolio/";
+                    break;
+                default:
+                    portfolioObject.description = "idk what went wrong";
+            };
+            return portfolioObject;
+        };
+
+        $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var recipient = button.text();
+            var response = textOf(recipient);
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this);
+            modal.find('.modal-title').text(recipient);
+            modal.find('.modal-body').text(response.description);
+            modal.find('.btn-secondary').attr("href", response.github);
+            modal.find('.btn-info').attr("href", response.deployed);
+        });
+    </script>
 </body>
 
 </html>
